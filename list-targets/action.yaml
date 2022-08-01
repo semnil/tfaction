@@ -34,7 +34,7 @@ runs:
 
     - uses: suzuki-shunsuke/tfaction/list-working-dirs@main
       id: list-working-directory-configs
-    - uses: suzuki-shunsuke/tfaction/list-targets-with-changed-files@main
+    - uses: semnil/tfaction/list-targets-with-changed-files@test
       id: list-targets
       with:
         changed_files: ${{ env.CI_INFO_TEMP_DIR }}/pr_all_filenames.txt
